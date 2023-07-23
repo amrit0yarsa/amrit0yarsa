@@ -1,1 +1,33 @@
-Amidst the bustling city streets, hidden stories unravel. Strangers pass like fleeting shadows, each
+Basic Info
+Amica NodeMCU ESP8266MOD to Arduino IDE gives garbage / gibberish serial monitor output. Note that the Blink examples function perfectly (both native Arduino and ESP8266 versions). The only good serial monitor text I can generate from this board is the bootloader output after reset button is pressed. Anything else (I've tried many examples and all baud rates) gives garbage.
+
+Hardware
+Hardware: Amica ESP8266 CP2102 NodeMCU LUA ESP-12E WIFI Serial Wireless Module
+Chip: ESP8266EX
+Purchased From: https://www.amazon.com/gp/product/B010O1G1ES/ref=ask_ql_qh_dp_hza
+Core Version: 2.4.0-rc2
+OS: macOS High Sierra 10.13.2
+
+Description
+Arduino IDE v1.8.5 installed with latest rc2 version of esp8266/Arduino installed - with the Silicon Labs CP2102 drivers installed correctly. Using the latest version of esp8266/Arduino and can't get the module to output to serial monitor (only outputs gibberish characters) - except for bootloader reset. Serial monitor baud rate is 115200 - no other baud rate works with bootloader (gives 100% gibberish).
+
+Settings in IDE
+Module: NodeMCU 1.0 (ESP- 12E Module)
+Flash Size: 4MB/1MB
+CPU Frequency: 80Mhz
+Flash Mode: n/a
+Flash Frequency: ?? not sure where this is set in Arduino IDE ??
+Upload Speed: 115200
+Upload Using: USB
+Reset Method: nodemcu
+
+Serial Output
+ets Jan  8 2013,rst cause:2, boot mode:(3,7)
+load 0x4010f000, len 1384, room 16 
+tail 8
+chksum 0x2d
+csum 0x2d
+v355232ff
+~ld
+Sketch
+Only testing with the WifiScan example for now
